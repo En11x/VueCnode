@@ -74,6 +74,7 @@ export default {
 	beforeRouteUpdate(to, from, next) {
 		let id = to.params.id
 		this.getTopic(id)
+		next()
 	},
 	components: {
 		ProfilePanel,
